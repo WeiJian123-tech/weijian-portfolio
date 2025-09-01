@@ -18,7 +18,7 @@ export const Navbar = component$(() => {
             </div>
             
             <div class="flex flex-row items-center justify-around w-auto h-full bg-slate-200">
-                <a href="/" class="flex grow items-center justify-center w-full h-full font-sans font-bold px-1 border-1 border-black hover:bg-slate-300 active:bg-slate-300">Home</a>
+                <Link href="/" class="flex grow items-center justify-center w-full h-full font-sans font-bold px-1 border-1 border-black hover:bg-slate-300 active:bg-slate-300">Home</Link>
                 <Link href="/about" class="flex grow items-center justify-center w-full h-full font-sans font-bold px-1 border-1 border-black hover:bg-slate-300 active:bg-slate-300">About</Link>
                 <Link href="/projects" class="flex grow items-center justify-center w-full h-full font-sans font-bold px-1 border-1 border-black hover:bg-slate-300 active:bg-slate-300">Projects</Link>
                 <Link href="/contact" class="flex grow items-center justify-center w-full h-full font-sans font-bold px-1 border-1 border-black hover:bg-slate-300 active:bg-slate-300">Contact</Link>
