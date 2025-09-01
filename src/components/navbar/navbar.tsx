@@ -4,7 +4,7 @@ import { Link } from "@builder.io/qwik-city";
 export const Navbar = component$(() => {
 
     return (
-        <nav class="flex flex-row items-center justify-between h-[6rem] bg-slate-100">
+        <nav class="flex flex-row items-center justify-between h-[6rem] sticky top-0 z-10 bg-slate-100">
             <div class="flex items-center justify-center h-full">
                 <a href="/">
                     <img 

@@ -1,0 +1,13 @@
+.heroImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    background-image:url('./assets/pineapple-supply-co-n_CvvktBf-Q-unsplash.jpg');
+    background-color: lightblue;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
