@@ -1,13 +1,28 @@
 import { component$ } from "@builder.io/qwik";
-import { Link, type DocumentHead } from "@builder.io/qwik-city";
+import { type DocumentHead } from "@builder.io/qwik-city";
 import { Navbar } from "~/components/navbar/navbar";
 import { Redirbtn } from "~/components/Redirbtn";
+import { Redirlink } from "~/components/Redirlink";
 import heroStyles from "~/heroImage.module.css";
 
 export default component$(() => {
+
+  interface footerData {
+    pathName: string;
+    label: string;
+    class?: string;
+  }
+
+  const footerLinks: footerData[] = [
+    { pathName: 'mailto:zhen16999@proton.me', label: 'Email: zhen16999@proton.me', class: 'text-xs' },
+    { pathName: 'www.linkedin.com/in/wei-jian-zhen-la', label: 'LinkedIn: www.linkedin.com/in/wei-jian-zhen-la', class: 'text-xs' },
+    { pathName: 'https://github.com/WeiJian123-tech', label: 'GitHub: https://github.com/WeiJian123-tech', class: 'text-xs' },
+  ];
+
   return (
     <>
       <Navbar />
+
       <main class="flex flex-col items-center justify-center-safe w-full h-screen">
         <div class={heroStyles.heroImage}>
 
@@ -21,22 +36,31 @@ export default component$(() => {
           </div>
           
           <div class="flex items-center justify-center w-full h-auto">
-            <small class="font-serif text-gray-900 bg-slate-300/40">
-              Photo by <Link href="https://unsplash.com/@pineapple?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="underline">
-              Pineapple Supply Co.
-              </Link> on <Link href="https://unsplash.com/photos/macbook-pro-n_CvvktBf-Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="underline">
-              Unsplash
-              </Link>
+            <small class="font-serif text-gray-800 bg-zinc-300/75">
+              Photo by <Redirlink 
+              pathName={'https://unsplash.com/@pineapple?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'} 
+              label={'Pineapple Supply Co.'} 
+              />
+              on <Redirlink 
+              pathName={'https://unsplash.com/photos/macbook-pro-n_CvvktBf-Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'} 
+              label={'Unsplash'} 
+              />
             </small>
             
           </div>
           
         </div>
       </main>
-      <footer>
-        <p>Email</p>
-        <p>LinkedIn</p>
-        <p>GitHub</p>
+
+      <footer class="flex flex-col items-center justify-evenly w-full h-auto text-center">
+        {footerLinks.map((link) => (
+          <Redirlink
+            key={link.pathName}
+            pathName={link.pathName}
+            label={link.label}
+            class={link.class}
+          />
+        ))}
       </footer>
     </>
   );
