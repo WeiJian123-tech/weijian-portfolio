@@ -2,20 +2,10 @@ import { component$ } from "@builder.io/qwik";
 import { type DocumentHead } from "@builder.io/qwik-city";
 import { Navbar } from "~/components/navbar/navbar";
 import { Redirlink } from "~/components/Redirlink";
+import { Footer } from "~/components/footer";
 import Selfie from '~/assets/wjz_portrait-min.png?jsx';
 
 export default component$(() => {
-    interface footerData {
-        pathName: string;
-        label: string;
-        class?: string;
-    }
-
-    const footerLinks: footerData[] = [
-        { pathName: 'mailto:zhen16999@proton.me', label: 'Email: zhen16999@proton.me', class: 'text-xs' },
-        { pathName: 'www.linkedin.com/in/wei-jian-zhen-la', label: 'LinkedIn: www.linkedin.com/in/wei-jian-zhen-la', class: 'text-xs' },
-        { pathName: 'https://github.com/WeiJian123-tech', label: 'GitHub: https://github.com/WeiJian123-tech', class: 'text-xs' },
-    ];
     
     return (
         <div class="flex flex-col items-center justify-center w-screen min-h-screen">
@@ -96,16 +86,7 @@ export default component$(() => {
                 </div>
             </main>
 
-            <footer class="flex flex-col items-center justify-evenly w-full h-auto text-center">
-                {footerLinks.map((link) => (
-                <Redirlink
-                    key={link.pathName}
-                    pathName={link.pathName}
-                    label={link.label}
-                    class={link.class}
-                />
-                ))}
-            </footer>
+            <Footer />
         </div>
     );
 });
