@@ -9,10 +9,11 @@ import heroStyles from "~/heroImage.module.css";
 export default component$(() => {
 
   return (
-    <>
+    <div class="flex flex-col items-center justify-start w-screen min-h-screen">
+
       <Navbar />
 
-      <main class="flex flex-col items-center justify-center-safe w-full h-screen">
+      <main class="flex flex-col items-center justify-center-safe w-full overflow-y-auto">
         <div class={heroStyles.heroImage}>
 
           <div class="flex flex-col items-center justify-between w-full h-auto">
@@ -42,7 +43,7 @@ export default component$(() => {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 });
 

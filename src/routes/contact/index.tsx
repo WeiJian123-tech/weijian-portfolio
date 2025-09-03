@@ -6,14 +6,16 @@ import { Footer } from "~/components/footer";
 export default component$(() => {
     
     return (
-        <>
+        <div class="flex flex-col items-center justify-start w-screen min-h-screen">
+
             <Navbar />
-            <main class="flex flex-col items-center justify-center-safe w-full h-screen">
+
+            <main class="flex flex-col items-center justify-center-safe w-full overflow-y-auto">
                 <h1>Contact</h1>
             </main>
 
             <Footer />
-        </>
+        </div>
     );
 });
 

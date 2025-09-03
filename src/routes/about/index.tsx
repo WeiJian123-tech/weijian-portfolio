@@ -8,8 +8,10 @@ import Selfie from '~/assets/wjz_portrait-min.png?jsx';
 export default component$(() => {
     
     return (
-        <div class="flex flex-col items-center justify-center w-screen min-h-screen">
+        <div class="flex flex-col items-center justify-start w-screen min-h-screen">
+
             <Navbar />
+
             <main class="flex flex-col flex-grow items-center justify-center-safe w-full overflow-y-auto">
                 <div class="flex flex-row items-start justify-center w-full h-full bg-[#90b5cc]">
                     <div class="flex flex-col items-start justify-start p-2 w-1/2 h-full">
@@ -70,8 +72,8 @@ export default component$(() => {
                 </div>
 
                 <div class="flex flex-row items-start justify-center w-full h-full bg-violet-300">
-                    <div class="flex flex-col items-start justify-start p-2">
-                        <h2 class="text-xl font-serif font-bold">
+                    <div class="flex flex-col items-center justify-start p-2">
+                        <h2 class="text-xl font-serif font-bold text-center">
                             Featured Project!
                         </h2>
                         
