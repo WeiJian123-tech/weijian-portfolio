@@ -30,7 +30,7 @@ export default component$(() => {
             <main class="flex flex-col items-center justify-center-safe w-full bg-[#f2d78c] overflow-y-auto">
                 <h1 class="text-4xl text-black font-bold font-sans text-center">Projects</h1>
 
-                <ol class="my-2 list-disc text-normal text-slate-900 font-normal font-serif">
+                <ul class="my-2 list-disc text-normal text-slate-900 font-normal font-serif">
                   {projects.map((project) => (
                     <li key={project.pathname}>
                       <Redirlink 
@@ -40,7 +40,7 @@ export default component$(() => {
                       />
                     </li>
                   ))}
-                </ol>
+                </ul>
             </main>
 
             <Footer />
