@@ -32,7 +32,7 @@ export const Footer = component$(() => {
     ];
 
     return (
-        <footer class="flex flex-row items-center justify-evenly p-2 w-full h-auto text-center">
+        <footer class="flex flex-row items-center justify-evenly p-2 w-full h-auto border-y-1 border-slate-900 text-center">
 
             {socialBtnAttr.map((attr) => (
                 <Socialbtn 
