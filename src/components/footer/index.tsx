@@ -1,5 +1,4 @@
 import { component$ } from "@builder.io/qwik";
-//import { Redirlink } from "~/components/Redirlink";
 import { Socialbtn } from "../socialbtn";
 import protonmailIcon from "../../assets/protonmailicon.png";
 import linkedinIcon from "../../assets/linkedinicon.png";
@@ -9,7 +8,6 @@ interface socialBtnData {
     url: string;
     imagePath: string;
     altText: string;
-    tooltipText?: string;
     class?: string;
 }
 
@@ -20,19 +18,16 @@ export const Footer = component$(() => {
             url: 'mailto:zhen16999@proton.me', 
             imagePath: protonmailIcon, 
             altText: 'Proton Mail icon that redirects to my email address', 
-            tooltipText: 'Proton Mail' 
         },
         {
             url: 'https://www.linkedin.com/in/wei-jian-zhen-la', 
             imagePath: linkedinIcon, 
-            altText: 'LinkedIn icon that redirects to my LinkedIn profile', 
-            tooltipText: 'LinkedIn'
+            altText: 'LinkedIn icon that redirects to my LinkedIn profile',
         },
         {
             url: 'https://github.com/WeiJian123-tech', 
             imagePath: githubIcon, 
             altText: 'GitHub icon that redirects to my LinkedIn profile', 
-            tooltipText: 'GitHub'
         },
     ];
 
@@ -45,7 +40,6 @@ export const Footer = component$(() => {
                     url={attr.url}
                     imagePath={attr.imagePath}
                     altText={attr.altText}
-                    tooltipText={attr.tooltipText}
                     class={attr.class}
                 />
             ))}
