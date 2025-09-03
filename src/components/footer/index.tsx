@@ -1,29 +1,56 @@
 import { component$ } from "@builder.io/qwik";
-import { Redirlink } from "~/components/Redirlink";
+//import { Redirlink } from "~/components/Redirlink";
+import { Socialbtn } from "../socialbtn";
+import protonmailIcon from "../../assets/protonmailicon.png";
+import linkedinIcon from "../../assets/linkedinicon.png";
+import githubIcon from "../../assets/github_PNG40.png";
+
+interface socialBtnData {
+    url: string;
+    imagePath: string;
+    altText: string;
+    tooltipText?: string;
+    class?: string;
+}
 
 export const Footer = component$(() => {
-    interface footerData {
-        pathName: string;
-        label: string;
-        class?: string;
-    }
 
-    const footerLinks: footerData[] = [
-        { pathName: 'mailto:zhen16999@proton.me', label: 'Email: zhen16999@proton.me', class: 'text-xs' },
-        { pathName: 'www.linkedin.com/in/wei-jian-zhen-la', label: 'LinkedIn: www.linkedin.com/in/wei-jian-zhen-la', class: 'text-xs' },
-        { pathName: 'https://github.com/WeiJian123-tech', label: 'GitHub: https://github.com/WeiJian123-tech', class: 'text-xs' },
+    const socialBtnAttr: socialBtnData[] = [
+        { 
+            url: 'mailto:zhen16999@proton.me', 
+            imagePath: protonmailIcon, 
+            altText: 'Proton Mail icon that redirects to my email address', 
+            tooltipText: 'Proton Mail' 
+        },
+        {
+            url: 'https://www.linkedin.com/in/wei-jian-zhen-la', 
+            imagePath: linkedinIcon, 
+            altText: 'LinkedIn icon that redirects to my LinkedIn profile', 
+            tooltipText: 'LinkedIn'
+        },
+        {
+            url: 'https://github.com/WeiJian123-tech', 
+            imagePath: githubIcon, 
+            altText: 'GitHub icon that redirects to my LinkedIn profile', 
+            tooltipText: 'GitHub'
+        },
     ];
 
     return (
-        <footer class="flex flex-col items-center justify-evenly w-full h-auto text-center">
-            {footerLinks.map((link) => (
-            <Redirlink
-                key={link.pathName}
-                pathName={link.pathName}
-                label={link.label}
-                class={link.class}
-            />
+        <footer class="flex flex-row items-center justify-evenly p-2 w-full h-auto text-center">
+
+            {socialBtnAttr.map((attr) => (
+                <Socialbtn 
+                    key={attr.url}
+                    url={attr.url}
+                    imagePath={attr.imagePath}
+                    altText={attr.altText}
+                    tooltipText={attr.tooltipText}
+                    class={attr.class}
+                />
             ))}
+            
+            
         </footer>
     );
 });
