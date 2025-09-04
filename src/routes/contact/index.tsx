@@ -7,7 +7,7 @@ import { Redirlink } from "~/components/Redirlink";
 export default component$(() => {
     
     return (
-        <div class="flex flex-col items-center justify-start w-screen min-h-screen">
+        <div class="flex flex-col items-start justify-start w-screen min-h-screen">
 
             <Navbar />
 

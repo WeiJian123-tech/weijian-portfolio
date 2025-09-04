@@ -9,7 +9,7 @@ import heroStyles from "~/heroImage.module.css";
 export default component$(() => {
 
   return (
-    <div class="flex flex-col items-center justify-start w-screen min-h-screen">
+    <div class="flex flex-col items-start justify-start w-screen min-h-screen">
 
       <Navbar />
 
@@ -22,7 +22,7 @@ export default component$(() => {
           </div>
 
           <div class="flex items-center justify-center w-full h-auto">
-            <Redirbtn url="./projects/index.tsx" label="View Projects!" class="p-4 text-2xl font-bold font-sans bg-teal-300/90" />
+            <Redirbtn url="./projects/index.tsx" label="View Projects!" class="p-4 text-2xl font-bold font-sans bg-green-300/90" />
           </div>
           
           <div class="flex items-center justify-center w-full h-auto">
