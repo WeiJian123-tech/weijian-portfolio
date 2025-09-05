@@ -82,7 +82,7 @@ export default component$(() => {
             <main class="flex flex-col items-center justify-center-safe w-full bg-[#f2d78c] overflow-y-auto">
                 <h1 class="text-4xl text-black font-bold font-sans text-center">Projects</h1>
 
-                <div class="grid grid-cols-1 items-center justify-center my-2 w-full h-auto">
+                <div class="grid grid-cols-1 items-center justify-center my-2 w-full h-auto lg:grid-cols-2 lg:gap-4 lg:px-4 lg:py-2">
 
                   {projects.map((project) => (
                     <div class="grid items-center justify-center" key={project.repoLink}>
