@@ -1,9 +1,10 @@
 import { component$ } from "@builder.io/qwik";
-import { type DocumentHead } from "@builder.io/qwik-city";
+import { Link, type DocumentHead } from "@builder.io/qwik-city";
 import { Navbar } from "~/components/navbar/navbar";
 import { Redirlink } from "~/components/Redirlink";
 import { Footer } from "~/components/footer";
 import Selfie from '~/assets/wjz_portrait-min.png?jsx';
+import BirdloggerImg from '~/assets/Birdlogger.png?jsx';
 
 export default component$(() => {
     
@@ -78,11 +79,11 @@ export default component$(() => {
                         </h2>
                         
                         <div class="flex flex-col items-center justify-center pt-4 text-center">
-                            <h4 class="py-2 text-md font-serif font-bold">
-                                Birdlogger
-                            </h4>
+                            <Link href="https://github.com/WeiJian123-tech/Birdlogger.git">
+                                <BirdloggerImg />
+                            </Link>
 
-                            <Redirlink pathName={"https://github.com/WeiJian123-tech/Birdlogger.git"} label={"https://github.com/WeiJian123-tech/Birdlogger.git"} />
+                            <Redirlink pathName={"https://github.com/WeiJian123-tech/Birdlogger.git"} label={"Birdlogger"} class={"text-xl"} />
                         </div>
                     </div>
                 </div>
