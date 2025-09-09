@@ -11,7 +11,7 @@ export const Navbar = component$(() => {
 
     const isHamClicked = useSignal(false);
 
-    const navLinkClasses:string = "flex grow items-center justify-center w-full h-full font-sans font-bold px-1 border-1 border-black hover:bg-slate-300 active:bg-slate-300";
+    const navLinkClasses:string = 'flex grow items-center justify-center w-full h-full text-5xl font-sans font-bold px-1 border-1 border-black bg-slate-300 hover:bg-slate-200 hover:text-6xl active:bg-slate-200 lg:text-2xl lg:hover:text-3xl';
 
     const navLinks: navLinkData[] = [
         {
@@ -60,7 +60,7 @@ export const Navbar = component$(() => {
                 </button>
             </div>
 
-            <div class={`absolute top-0 right-0 ${isHamClicked.value? 'flex flex-col' : 'hidden'} w-full h-screen z-50 bg-slate-300 lg:static lg:flex lg:flex-row lg:w-1/2 lg:h-full xl:w-1/4`}>
+            <div class={`absolute top-0 right-0 ${isHamClicked.value? 'flex flex-col' : 'hidden'} w-full h-screen z-50 bg-slate-300 lg:static lg:flex lg:flex-row lg:w-1/2 lg:h-full xl:w-1/3 xl:h-full`}>
                 <button 
                 onClick$={
                     () => {
@@ -68,7 +68,7 @@ export const Navbar = component$(() => {
                     }
                 } 
                 aria-label="Close Dropdown Menu" 
-                class="self-end w-[6rem] h-auto text-4xl text-red-500 bg-slate-100 hover:bg-slate-50 active:bg-slate-50 lg:hidden"
+                class="self-end w-[6rem] h-auto text-4xl text-red-500 bg-slate-100 hover:bg-slate-50 hover:text-5xl active:bg-slate-50 active:text-5xl lg:hidden"
                 >
                     X
                 </button>
