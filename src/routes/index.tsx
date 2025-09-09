@@ -17,12 +17,12 @@ export default component$(() => {
         <div class={heroStyles.heroImage}>
 
           <div class="flex flex-col items-center justify-between w-full h-auto">
-            <h1 class="text-4xl text-black font-bold font-sans text-center rounded-b-xs bg-slate-300/40">Wei Jian's Portfolio Homepage</h1>
-            <h2 class="text-2xl text-black font-bold font-sans text-center rounded-b-xs bg-slate-300/40">Unleash Work & Wonder!</h2>
+            <h1 class="text-4xl text-black font-bold font-sans text-center rounded-b-xs bg-slate-300/40 lg:text-6xl lg:p-2">Wei Jian's Portfolio Homepage</h1>
+            <h2 class="text-2xl text-black font-bold font-sans text-center rounded-b-xs bg-slate-300/40 lg:text-4xl lg:p-2">Unleash Work & Wonder!</h2>
           </div>
 
           <div class="flex items-center justify-center w-full h-auto">
-            <Redirbtn url="/projects/" label="View Projects!" class="p-4 text-2xl font-bold font-sans bg-green-300/90" />
+            <Redirbtn url="/projects/" label="View Projects!" class="p-4 text-2xl font-bold font-sans bg-green-300/90 lg:p-8 lg:text-4xl" />
           </div>
           
         </div>

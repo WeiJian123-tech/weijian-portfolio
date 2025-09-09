@@ -45,7 +45,7 @@ export const Navbar = component$(() => {
                         alt="Wei Jian's GitHub Avatar"
                         width={5}
                         height={5}
-                        class="w-auto h-[4rem] m-1 object-contain rounded-full" 
+                        class="w-auto h-[4rem] m-1 object-contain rounded-full md:m-2 lg:m-3" 
                     />
                 </a>
             </div>
