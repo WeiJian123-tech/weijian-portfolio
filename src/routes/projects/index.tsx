@@ -79,7 +79,7 @@ export default component$(() => {
 
             <Navbar />
 
-            <main class="flex flex-col items-center justify-center-safe w-full bg-[#f2d78c] overflow-y-auto">
+            <main class="flex flex-col items-center justify-center-safe w-full overflow-y-auto bg-[#f2d78c] bg-gradient-to-b from-[#fce29c] via-orange-300 to-emerald-200">
                 <h1 class="text-4xl text-black font-bold font-sans text-center">Projects</h1>
 
                 <div class="grid grid-cols-1 items-center justify-center my-2 w-full h-auto lg:grid-cols-2 lg:gap-4 lg:px-4 lg:py-2">

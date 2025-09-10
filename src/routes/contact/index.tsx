@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import { type DocumentHead } from "@builder.io/qwik-city";
+import { Link, type DocumentHead } from "@builder.io/qwik-city";
 import { Navbar } from "~/components/navbar/navbar";
 import { Footer } from "~/components/footer";
 import { Redirlink } from "~/components/Redirlink";
@@ -11,8 +11,17 @@ export default component$(() => {
 
             <Navbar />
 
-            <main class="flex flex-col items-center justify-center-safe w-full overflow-y-auto">
+            <main class="flex flex-col items-center justify-center-safe w-full overflow-y-auto bg-slate-100 ">
                 <h1 class="text-4xl text-black font-bold font-sans text-center">Contact</h1>
+
+                <div class="flex flex-col items-center justify-center my-2">
+                  <Link href="https://giphy.com/gifs/email-YmjleYhDTUiYw" class="w-full h-auto">
+                    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExM254aDU4ZGluazdidTNxdnozbHp1ZXR6b3BxamJ2bzkyaDM2cHoxMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YmjleYhDTUiYw/giphy.gif" alt="A GIF of mail being inserted into a mailbox with 'Email' written on it" width={64} height={64} class="w-full h-auto" />
+                  </Link>
+                  
+                  <Redirlink pathName={"https://giphy.com/gifs/email-YmjleYhDTUiYw"} label={"via GIPHY"} />
+                  
+                </div>
 
                 <p class="text-lg text-slate-900 font-normal font-serif text-center">Please feel free to contact me via my socials below! 😊👇</p>
                 

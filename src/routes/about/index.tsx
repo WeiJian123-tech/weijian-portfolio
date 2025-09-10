@@ -17,7 +17,7 @@ export default component$(() => {
 
             <main class="flex flex-col flex-grow items-center justify-center-safe w-full overflow-y-auto">
 
-                <div class="flex flex-col w-full h-auto bg-[#c0e0f3]">
+                <div class="flex flex-col w-full h-auto bg-[#c0e0f3] bg-gradient-to-b from-slate-300 from-5% via-[#c0e0f3] via-50% to-orange-200 to-99%">
 
                     <div class="flex flex-col items-center justify-center max-h-1/4 text-center overflow-hidden">
                         <h1 class="text-4xl font-serif font-bold">Hello! 👋</h1>
@@ -71,7 +71,7 @@ export default component$(() => {
 
                 </div>
 
-                <div class="flex flex-row items-start justify-center w-full h-full bg-orange-300">
+                <div class="flex flex-row items-start justify-center w-full h-full bg-orange-300 bg-gradient-to-b from-orange-200 from-5% via-orange-300 via-50% to-green-200 to-99%">
                     <div class="flex flex-col items-center justify-start p-2">
                         <h2 class="text-3xl font-serif font-bold text-center">
                             Professional Background
@@ -100,7 +100,7 @@ export default component$(() => {
                     </div>
                 </div>
 
-                <div class="flex flex-row items-start justify-center w-full h-full bg-green-300">
+                <div class="flex flex-row items-start justify-center w-full h-full bg-green-300 bg-gradient-to-b from-green-200 from-1% via-green-300 via-89% to-[#dbc4f8] to-99%">
                     <div class="flex flex-col items-center justify-center p-2">
                         <h2 class="text-3xl font-serif font-bold text-center">
                             Mission Statement
@@ -111,7 +111,7 @@ export default component$(() => {
                     </div>
                 </div>
 
-                <div class="flex flex-row items-start justify-center w-full h-full bg-[#ceabfc]">
+                <div class="flex flex-row items-start justify-center w-full h-full bg-[#ceabfc] bg-gradient-to-b from-[#dbc4f8] from-5% via-[#ceabfc] via-50% to-[#668ff4] to-99%">
                     <div class="flex flex-col items-center justify-start p-2">
                         <h2 class="text-3xl font-serif font-bold text-center">
                             Featured Project!
