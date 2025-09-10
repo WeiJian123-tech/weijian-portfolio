@@ -1,0 +1,1 @@
+import{_ as o}from"./q-fFn9hMSC.js";import{m as e,N as i}from"./q-BcAhc_2P.js";const r=e(i(()=>o(()=>import("./q-D_D71PDI.js").then(t=>t.i),[]),"s_dT0sDkUStYI")),m={title:"About",meta:[{name:"description",content:"Wei Jian's portfolio about page"}]};export{r as default,m as head};
