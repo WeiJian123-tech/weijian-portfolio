@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v5.0.0
         with: 
-          node-version: '24'
+          node-version: '24.8.0'
           cache: 'bun' #Setup-node action cache is faster for a project structure/directories that share multiple dependencies than Cache action.
 
       - name: Install dependencies
