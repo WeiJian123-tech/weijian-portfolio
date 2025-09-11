@@ -28,7 +28,7 @@ jobs:
       - name: Cache Bun.js dependencies
         uses: actions/cache@v3
         with:
-          path: ~/.bun/cache  # Path to Bun's cache directory
+          path: ~/.bun/install/cache  # Path to Bun's cache directory
           key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lock') }}
           restore-keys: |
             ${{ runner.os }}-bun-
