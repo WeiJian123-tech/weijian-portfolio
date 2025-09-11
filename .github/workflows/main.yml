@@ -38,7 +38,7 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Build the project
-        run: bun run build.client
+        run: bun run build
 
       - name: List files after build
         run: ls -la  # This will help verify if the dist directory is created
