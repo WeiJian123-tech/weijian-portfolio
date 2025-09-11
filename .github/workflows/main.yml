@@ -40,6 +40,9 @@ jobs:
       - name: Build the project
         run: bun run build.client
 
+      - name: List files after build
+        run: ls -la  # This will help verify if the dist directory is created
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5.0.0
 
