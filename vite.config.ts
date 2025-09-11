@@ -33,6 +33,7 @@ export default defineConfig(({ command, mode }): UserConfig => {
       // For example ['better-sqlite3'] if you use that in server functions.
       exclude: [],
     },
+    base: '/weijian-portfolio/',
     build: {
       outDir: 'dist', // Adjust this to your desired output directory
     },
