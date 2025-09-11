@@ -24,6 +24,12 @@ jobs:
         with: 
           node-version: '24.8.0'
           #Setup-node does not support cache for Qwik.js
+
+      - name: Debug
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Listing files:"
+          ls -la
           
       - name: Cache Bun.js dependencies
         uses: actions/cache@v3
