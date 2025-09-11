@@ -34,7 +34,7 @@ export default defineConfig(({ command, mode }): UserConfig => {
       exclude: [],
     },
     build: {
-      outDir: '../dist', // Adjust this to your desired output directory
+      outDir: 'dist', // Adjust this to your desired output directory
     },
     /**
      * This is an advanced setting. It improves the bundling of your server code. To use it, make sure you understand when your consumed packages are dependencies or dev dependencies. (otherwise things will break in production)
