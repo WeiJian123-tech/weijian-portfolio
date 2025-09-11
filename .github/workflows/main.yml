@@ -24,29 +24,18 @@ jobs:
         with: 
           node-version: '24.8.0'
           #Setup-node does not support cache for Qwik.js
-
-      - name: Debug
-        run: |
-          echo "Current directory: $(pwd)"
-          echo "Listing files:"
-          ls -la
           
+      #Unable to cach Bun.js dependencies
       - name: Cache Bun.js dependencies
         uses: actions/cache@v3
         with:
           path: node_modules
-          key: ${{ runner.os }}-bun-${{ hashFiles('bun.lock') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('bun.lock') }}
           restore-keys: |
-            ${{ runner.os }}-bun-
+            ${{ runner.os }}-node-
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
-
-      - name: Debug Again
-        run: |
-          echo "Current directory: $(pwd)"
-          echo "Listing files:"
-          ls -la
 
       - name: Build the project
         run: bun run build
