@@ -43,6 +43,9 @@ jobs:
       - name: List files after build
         run: ls -la  # This will help verify if the dist directory is created
 
+      - name: List dist directory
+        run: ls -1a /dist
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5.0.0
 
