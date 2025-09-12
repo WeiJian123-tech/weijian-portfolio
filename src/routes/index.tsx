@@ -22,7 +22,7 @@ export default component$(() => {
           </div>
 
           <div class="flex items-center justify-center w-full h-auto">
-            <Redirbtn url="/projects/" label="View Projects!" class="p-4 text-2xl font-bold font-sans bg-green-300/90 lg:p-8 lg:text-4xl" />
+            <Redirbtn url="./projects" label="View Projects!" class="p-4 text-2xl font-bold font-sans bg-green-300/90 lg:p-8 lg:text-4xl" />
           </div>
           
         </div>

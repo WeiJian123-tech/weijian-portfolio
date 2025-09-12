@@ -20,17 +20,17 @@ export const Navbar = component$(() => {
             class: navLinkClasses,
         },
         {
-            pathname: '/about',
+            pathname: '/weijian-portfolio/about',
             label: 'About',
             class: navLinkClasses,
         },
         {
-            pathname: '/projects',
+            pathname: '/weijian-portfolio/projects',
             label: 'Projects',
             class: navLinkClasses,
         },
         {
-            pathname: '/contact',
+            pathname: '/weijian-portfolio/contact',
             label: 'Contacts',
             class: navLinkClasses,
         },
