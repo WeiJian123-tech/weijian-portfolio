@@ -38,7 +38,7 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Install Qwik.js Static Site Generation
-        run: bun run qwik add static
+        run: echo "y" | bun run qwik add static
 
       - name: List files before build
         run: ls -la  # Verifies if /adapters/static/vite.config.ts has been created. 
