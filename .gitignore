@@ -47,7 +47,7 @@ lerna-debug.log*
 !.yarn/releases
 
 # Build output
-# dist/
+dist/
 build/
 out/
 *.tgz
