@@ -95,7 +95,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center justify-center w-full h-auto">
-            <Redirbtn pathName="#projects" label="View Projects!" className="p-4 text-2xl font-bold font-sans bg-green-300/90 lg:p-8 lg:text-4xl" />
+            <Redirbtn pathName="#projects" label="View Projects!" className="p-6 text-2xl text-slate-900 font-bold font-sans bg-green-300/90 lg:p-8 lg:text-4xl" />
           </div>
         </div>
 
@@ -119,7 +119,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-row items-center justify-center my-2 w-full h-auto overflow-hidden border-4 border-solid border-slate-900 sm:border-2 lg:border-0">
-              <Image src={Selfie} alt="A selfie portrait of Wei Jian Zhen" className="w-full h-[28rem] sm:w-1/2 sm:h-[30rem] lg:w-1/3 xl:w-1/4 xl:h-[34rem]" />
+              <Image src={Selfie} alt="A selfie portrait of Wei Jian Zhen" priority={true} className="w-full h-[28rem] sm:w-1/2 sm:h-[30rem] lg:w-1/3 xl:w-1/4 xl:h-[34rem]" />
           </div>
 
           <div className="px-2 py-1 overflow-hidden">
