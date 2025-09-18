@@ -25,7 +25,7 @@ export default function Home() {
     class?: string;
   }
 
-  const paragraphStyles:string = 'py-2 text-2xl font-serif font-normal indent-8 lg:indent-16';
+  const paragraphStyles:string = 'py-2 text-2xl font-serif font-normal indent-8 sm:px-4 md:px-6 lg:px-8 lg:indent-16 xl:px-12 2xl:px-16';
 
   const projects: projectData[] = [
     {
@@ -161,40 +161,40 @@ export default function Home() {
         </div>
 
         <div className="flex flex-row items-start justify-center w-full h-full bg-orange-300 bg-gradient-to-b from-orange-200 from-5% via-orange-300 via-50% to-green-200 to-99%">
-            <div className="flex flex-col items-center justify-start p-2">
-                <h2 className="text-3xl font-serif font-bold text-center">
-                    Professional Background
-                </h2>
-                <p className={paragraphStyles}>
-                    I have an undergraduate computer science degree from CUNY Brooklyn College. 
-                    I learned about data structures, discrete structures, C++ programming paradigms, and more.
-                    I attended a competitive web development fellowship called CUNY Tech Prep. 
-                    I volunteered and interned at organizations like New York Public Interest Research Group (NYPIRG)
-                    where I participated in planning and holding events for activism related topics/goals.
-                    Even after attaining my degree and working at a few organizations, I continue to learn and grow.
-                    I program and push my projects onto GitHub for the world to see. To view them, please visit 
-                    my <Link href="#projects">projects</Link> section to explore the wonderful projects I created over the years. 😄
-                </p>
+          <div className="flex flex-col items-center justify-start p-2">
+              <h2 className="text-3xl font-serif font-bold text-center">
+                  Professional Background
+              </h2>
+              <p className={paragraphStyles}>
+                  I have an undergraduate computer science degree from CUNY Brooklyn College. 
+                  I learned about data structures, discrete structures, C++ programming paradigms, and more.
+                  I attended a competitive web development fellowship called CUNY Tech Prep. 
+                  I volunteered and interned at organizations like New York Public Interest Research Group (NYPIRG)
+                  where I participated in planning and holding events for activism related topics/goals.
+                  Even after attaining my degree and working at a few organizations, I continue to learn and grow.
+                  I program and push my projects onto GitHub for the world to see. To view them, please visit 
+                  my <Link href="#projects">projects</Link> section to explore the wonderful projects I created over the years. 😄
+              </p>
 
-                <h3 className="text-2xl font-serif font-bold text-center">
-                    My Top 5 Programming Languages
-                </h3>
-                <ol className="text-xl py-4 list-decimal font-mono">
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>Qwik.js</li>
-                    <li>Python</li>
-                    <li>Next.js</li>
-                </ol>
-            </div>
+              <h3 className="text-2xl font-serif font-bold text-center">
+                  My Top 5 Programming Languages
+              </h3>
+              <ol className="text-xl py-4 list-decimal font-mono">
+                  <li>Java</li>
+                  <li>JavaScript</li>
+                  <li>Qwik.js</li>
+                  <li>Python</li>
+                  <li>Next.js</li>
+              </ol>
+          </div>
         </div>
 
-        <div className="flex flex-row items-start justify-center w-full h-full bg-green-300 bg-gradient-to-b from-green-200 from-1% via-green-300 via-89% to-[#dbc4f8] to-99%">
+        <div className="flex flex-row items-start justify-center w-full h-full bg-green-300 bg-gradient-to-b from-green-200 from-1% via-green-300 via-89% to-[#f2d78c] to-99%">
             <div className="flex flex-col items-center justify-center p-2">
                 <h2 className="text-3xl font-serif font-bold text-center">
                     Mission Statement
                 </h2>
-                <p className="p-2 text-2xl font-serif font-normal">
+                <p className="p-2 text-2xl font-serif font-normal sm:p-6">
                     To continuously educate, adapt, and innovate in an ever-changing tech field providing quality user experiences.
                 </p>
             </div>
