@@ -21,10 +21,11 @@ jobs:
         run: bun install
 
       - name: Merge Pull Requests
-        run: |
-          gh pr merge ${{ github.event.pull_request.number }} --squash --admin
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GH_PAT }}
+          script: |
+            gh pr merge ${{ github.event.pull_request.number }} --squash --admin
           
         
         
