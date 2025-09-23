@@ -2,6 +2,7 @@ import './globals.css';
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import Redirbtn from "@/components/redirbtn/Redirbtn";
+import Redirlink from '@/components/redirlink/Redirlink';
 import Link from "next/link";
 import Image from "next/image";
 import Selfie from '../assets/wjz_portrait-min.png';
@@ -95,18 +96,14 @@ export default function Home() {
           </div>
 
           <div className="flex items-center justify-center w-full h-auto">
-            <Redirbtn pathName="#projects" label="View Projects!" className="p-6 text-2xl text-slate-900 font-bold font-sans bg-green-300/90 lg:p-8 lg:text-4xl" />
+            <Redirbtn pathName="#projects" label="View Projects!" className="p-6 text-2xl text-slate-900 font-bold font-sans bg-green-300/90 hover:bg-green-200/80 active:bg-green-200/80 lg:p-8 lg:text-4xl" />
           </div>
         </div>
 
         <div className="flex items-center justify-end w-full h-auto bg-amber-100">
           <small className="font-serif text-gray-500">
-            Photo by <Link href="https://unsplash.com/@pineapple?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-            Pineapple Supply Co.
-            </Link>
-            on <Link href="https://unsplash.com/photos/macbook-pro-n_CvvktBf-Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-            Unsplash
-            </Link>
+            Photo by <Redirlink pathName={'https://unsplash.com/@pineapple?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'} label={'Pineapple Supply Co.'} />
+            on <Redirlink pathName={'https://unsplash.com/photos/macbook-pro-n_CvvktBf-Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'} label={'Unsplash'} />
           </small>
           
         </div>
