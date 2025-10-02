@@ -125,12 +125,12 @@ export default function Home() {
                 I usually create open source GitHub projects on my own free time prioritizing user interface experience and quirky ideas. 😊
             </p>
             <p className={paragraphStyles}>
-                During my free time, I like to play video games like <Link href="https://www.konami.com/yugioh/masterduel/us/en/">Yugioh Master Duel</Link> and <Link href="https://www.smashbros.com/">Super Smash Bros.</Link> 🎮
+                During my free time, I like to play video games like <Redirlink pathName="https://www.konami.com/yugioh/masterduel/us/en/" label="Yugioh Master Duel" /> and <Redirlink pathName="https://www.smashbros.com/" label="Super Smash Bros" />. 🎮
                 I like to play video games so much that I wanted to make a video game myself. 
             </p>
             <p className={paragraphStyles}>
                 Therefore during my middle school years,
-                I decided with my stary-eyed passion to start learning how to program from <Link href="https://www.khanacademy.org/computing/computer-programming/programming">Kahn Academy</Link>. 🤩
+                I decided with my stary-eyed passion to start learning how to program from <Redirlink pathName="https://www.khanacademy.org/computing/computer-programming/programming" label="Kahn Academy" />. 🤩
                 Programming was intuitive because I just had to figure out which steps to place in order for ther program to work.
                 Yet programming was boring and convoluted since I had to determine exactly <i>how</i> it should be ordered along with syntax, bugs, etc. 👾
             </p>
@@ -176,7 +176,7 @@ export default function Home() {
               <h3 className="text-2xl font-serif font-bold text-center">
                   My Top 5 Programming Languages
               </h3>
-              <ol className="text-xl py-4 list-decimal font-mono">
+              <ol className="text-xl py-4 list-decimal font-mono sm:text-3xl md:text-4xl lg:text-5xl">
                   <li>Java</li>
                   <li>JavaScript</li>
                   <li>Qwik.js</li>
