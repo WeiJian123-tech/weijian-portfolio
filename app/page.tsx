@@ -170,7 +170,7 @@ export default function Home() {
                   where I participated in planning and holding events for activism related topics/goals.
                   Even after attaining my degree and working at a few organizations, I continue to learn and grow.
                   I program and push my projects onto GitHub for the world to see. To view them, please visit 
-                  my <Link href="#projects">projects</Link> section to explore the wonderful projects I created over the years. 😄
+                  my <Redirlink pathName="#projects" label="projects" /> section to explore the wonderful projects I created over the years. 😄
               </p>
 
               <h3 className="text-2xl font-serif font-bold text-center">
