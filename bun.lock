@@ -10,14 +10,14 @@
         "lucide-react": "^0.544.0",
         "next": "15.5.4",
         "react": "19.1.1",
-        "react-dom": "19.1.1",
+        "react-dom": "19.2.0",
         "tailwind-merge": "^3.3.1",
       },
       "devDependencies": {
         "@tailwindcss/postcss": "^4.1.13",
         "@types/node": "^24.5.2",
         "@types/react": "^19.1.13",
-        "@types/react-dom": "^19.1.9",
+        "@types/react-dom": "^19.2.0",
         "tailwindcss": "^4.1.13",
         "tw-animate-css": "^1.4.0",
         "typescript": "^5.9.2",
@@ -143,7 +143,7 @@
 
     "@types/react": ["@types/react@19.1.13", "", { "dependencies": { "csstype": "^3.0.2" } }, "sha512-hHkbU/eoO3EG5/MZkuFSKmYqPbSVk5byPFa3e7y/8TybHiLMACgI8seVYlicwk7H5K/rI2px9xrQp/C+AUDTiQ=="],
 
-    "@types/react-dom": ["@types/react-dom@19.1.9", "", { "peerDependencies": { "@types/react": "^19.0.0" } }, "sha512-qXRuZaOsAdXKFyOhRBg6Lqqc0yay13vN7KrIg4L7N4aaHN68ma9OK3NE1BoDFgFOTfM7zg+3/8+2n8rLUH3OKQ=="],
+    "@types/react-dom": ["@types/react-dom@19.2.0", "", { "peerDependencies": { "@types/react": "^19.2.0" } }, "sha512-brtBs0MnE9SMx7px208g39lRmC5uHZs96caOJfTjFcYSLHNamvaSMfJNagChVNkup2SdtOxKX1FDBkRSJe1ZAg=="],
 
     "caniuse-lite": ["caniuse-lite@1.0.30001741", "", {}, "sha512-QGUGitqsc8ARjLdgAfxETDhRbJ0REsP6O3I96TAth/mVjh2cYzN2u+3AzPP3aVSm2FehEItaJw1xd+IGBXWeSw=="],
 
@@ -217,9 +217,9 @@
 
     "react": ["react@19.1.1", "", {}, "sha512-w8nqGImo45dmMIfljjMwOGtbmC/mk4CMYhWIicdSflH91J9TyCyczcPFXJzrZ/ZXcgGRFeP6BU0BEJTw6tZdfQ=="],
 
-    "react-dom": ["react-dom@19.1.1", "", { "dependencies": { "scheduler": "^0.26.0" }, "peerDependencies": { "react": "^19.1.1" } }, "sha512-Dlq/5LAZgF0Gaz6yiqZCf6VCcZs1ghAJyrsu84Q/GT0gV+mCxbfmKNoGRKBYMJ8IEdGPqu49YWXD02GCknEDkw=="],
+    "react-dom": ["react-dom@19.2.0", "", { "dependencies": { "scheduler": "^0.27.0" }, "peerDependencies": { "react": "^19.2.0" } }, "sha512-UlbRu4cAiGaIewkPyiRGJk0imDN2T3JjieT6spoL2UeSf5od4n5LB/mQ4ejmxhCFT1tYe8IvaFulzynWovsEFQ=="],
 
-    "scheduler": ["scheduler@0.26.0", "", {}, "sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA=="],
+    "scheduler": ["scheduler@0.27.0", "", {}, "sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q=="],
 
     "semver": ["semver@7.7.2", "", { "bin": { "semver": "bin/semver.js" } }, "sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA=="],
 
