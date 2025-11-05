@@ -108,7 +108,7 @@ export default function Home() {
           
         </div>
 
-        <div id="about" className="flex flex-col w-full h-auto bg-[#c0e0f3] bg-gradient-to-b from-slate-300 from-5% via-[#c0e0f3] via-50% to-orange-200 to-99%">
+        <div id="about" className="flex flex-col w-full h-auto bg-[#c0e0f3] bg-linear-to-b from-slate-300 from-5% via-[#c0e0f3] via-50% to-orange-200 to-99%">
 
           <span className="flex w-auto h-[56px] bg-slate-200/90" />
 
@@ -159,7 +159,7 @@ export default function Home() {
 
         </div>
 
-        <div className="flex flex-row items-start justify-center w-full h-full bg-orange-300 bg-gradient-to-b from-orange-200 from-5% via-orange-300 via-50% to-green-200 to-99%">
+        <div className="flex flex-row items-start justify-center w-full h-full bg-orange-300 bg-linear-to-b from-orange-200 from-5% via-orange-300 via-50% to-green-200 to-99%">
           
           <div className="flex flex-col items-center justify-start p-2">
               <h2 className="text-3xl font-serif font-bold text-center">
@@ -189,7 +189,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-row items-start justify-center w-full h-full bg-green-300 bg-gradient-to-b from-green-200 from-1% via-green-300 via-89% to-[#f2d78c] to-99%">
+        <div className="flex flex-row items-start justify-center w-full h-full bg-green-300 bg-linear-to-b from-green-200 from-1% via-green-300 via-89% to-[#f2d78c] to-99%">
             <div className="flex flex-col items-center justify-center p-2">
                 <h2 className="text-3xl font-serif font-bold text-center">
                     Mission Statement
@@ -200,7 +200,7 @@ export default function Home() {
             </div>
         </div>
 
-        <div id="projects" className="flex flex-col items-center justify-center-safe w-full overflow-y-auto bg-[#f2d78c] bg-gradient-to-b from-[#fce29c] via-orange-300 to-emerald-200">
+        <div id="projects" className="flex flex-col items-center justify-center-safe w-full overflow-y-auto bg-[#f2d78c] bg-linear-to-b from-[#fce29c] via-orange-300 to-emerald-200">
           
           <span className="flex w-auto h-[56px] bg-slate-200/90" />
           
