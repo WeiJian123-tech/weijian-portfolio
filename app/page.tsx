@@ -87,16 +87,16 @@ export default function Home() {
         <div id="home" className="backgroundImage">
 
           <div className="flex flex-col items-center justify-between w-full h-auto">
-            <h1 className="text-4xl text-black font-bold font-sans text-center rounded-b-xs bg-slate-300/40 lg:text-6xl lg:p-2">
+            <h1 className="w-full text-4xl text-black font-bold font-sans text-center rounded-b-xs bg-slate-300/40 lg:text-6xl lg:p-2">
             Wei Jian's Portfolio Homepage
             </h1>
-            <h2 className="text-2xl text-black font-bold font-sans text-center rounded-b-xs bg-slate-300/40 lg:text-4xl lg:p-2">
+            <h2 className="w-full text-2xl text-black font-bold font-sans text-center rounded-b-xs bg-slate-300/40 lg:text-4xl lg:p-2">
             Unleash Work & Wonder!
             </h2>
           </div>
 
           <div className="flex items-center justify-center w-full h-auto">
-            <Redirbtn pathName="#projects" label="View Projects!" className="p-6 text-2xl text-slate-900 font-bold font-sans bg-green-300/90 hover:bg-green-200/80 active:bg-green-200/80 lg:p-8 lg:text-4xl" />
+            <Redirbtn pathName="#projects" label="View Projects!" className="p-6 text-2xl text-slate-900 font-bold font-sans border-2 border-slate-900 bg-green-300/90 hover:bg-green-200/80 active:bg-green-200/80 lg:p-8 lg:text-4xl" />
           </div>
         </div>
 
