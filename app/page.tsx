@@ -218,12 +218,12 @@ export default function Home() {
                 <div className="grid items-center justify-center p-2">
                   <div>
                     <p className="font-serif font-bold">GitHub Repository: </p>
-                    <Link href={project.repoLink}>{project.repoLabel}</Link>
+                    <Redirlink pathName={project.repoLink} label={project.repoLabel} />
                   </div>
 
                   <div>
                     <p className="font-serif font-bold">GitHub Pages Website (if applicable): </p>
-                    <Link href={project.repoLink}>{project.repoLabel}</Link>
+                    <Redirlink pathName={project.repoLink} label={project.repoLabel} />
                     <br />
                   </div>
                   
