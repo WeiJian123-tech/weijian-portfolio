@@ -110,6 +110,8 @@ export default function Home() {
 
         <div id="about" className="flex flex-col w-full h-auto bg-[#c0e0f3] bg-gradient-to-b from-slate-300 from-5% via-[#c0e0f3] via-50% to-orange-200 to-99%">
 
+          <span className="flex w-auto h-[56px] bg-slate-200/90" />
+
           <div className="flex flex-col items-center justify-center max-h-1/4 text-center overflow-hidden">
               <h1 className="text-4xl font-serif font-bold">Hello! 👋</h1>
               <h1 className="text-4xl font-serif font-bold">My name is Wei Jian Zhen.</h1>
@@ -158,6 +160,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-row items-start justify-center w-full h-full bg-orange-300 bg-gradient-to-b from-orange-200 from-5% via-orange-300 via-50% to-green-200 to-99%">
+          
           <div className="flex flex-col items-center justify-start p-2">
               <h2 className="text-3xl font-serif font-bold text-center">
                   Professional Background
@@ -198,6 +201,9 @@ export default function Home() {
         </div>
 
         <div id="projects" className="flex flex-col items-center justify-center-safe w-full overflow-y-auto bg-[#f2d78c] bg-gradient-to-b from-[#fce29c] via-orange-300 to-emerald-200">
+          
+          <span className="flex w-auto h-[56px] bg-slate-200/90" />
+          
           <h1 className="text-4xl text-black font-bold font-sans text-center">Projects</h1>
 
           <div className="grid grid-cols-1 items-center justify-center my-2 w-full h-auto lg:grid-cols-2 lg:gap-4 lg:px-4 lg:py-2">
