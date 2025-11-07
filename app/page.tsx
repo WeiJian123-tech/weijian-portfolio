@@ -87,7 +87,7 @@ export default function Home() {
         <div id="home" className="backgroundImage">
 
           <div className="flex flex-col items-center justify-between w-full h-auto">
-            <h1 className="w-full text-4xl text-black font-bold font-sans text-center rounded-b-xs bg-slate-300/40 lg:text-6xl lg:p-2">
+            <h1 className="w-full text-4xl text-black font-bold font-sans text-center rounded-b-xs bg-slate-300/40 sm:p-2 md:p-4 md:text-5xl lg:p-6 lg:text-6xl">
             Wei Jian's Portfolio Homepage
             </h1>
             <h2 className="w-full text-2xl text-black font-bold font-sans text-center rounded-b-xs bg-slate-300/40 lg:text-4xl lg:p-2">
