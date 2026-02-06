@@ -13,6 +13,8 @@ import DawnTradesImg from "../assets/DawnTrades.png";
 import CalculatorImg from "../assets/CalculatorV3.png";
 import BirdloggerImg from "../assets/Birdlogger.png";
 import ToDoImg from "../assets/CISC3650WebsiteProject.png";
+import MathQuest from "../assets/mathquest.png";
+import CalorieTracker from "../assets/calorie-tracker.png";
 
 export default function Home() {
   
@@ -29,6 +31,18 @@ export default function Home() {
   const paragraphStyles:string = 'py-2 text-2xl font-serif font-normal indent-8 sm:px-4 md:px-6 lg:px-8 lg:indent-16 xl:px-12 2xl:px-16';
 
   const projects: projectData[] = [
+    {
+      repoLink: 'https://github.com/WeiJian123-tech/calorie-tracker.git',
+      repoLabel: 'https://github.com/WeiJian123-tech/calorie-tracker.git',
+      imagePath: CalorieTracker,
+      altText: 'Image displaying a calorie-tracker window and terminal'
+    },
+    {
+      repoLink: 'https://github.com/WeiJian123-tech/mathquest.git',
+      repoLabel: 'https://github.com/WeiJian123-tech/mathquest.git',
+      imagePath: MathQuest,
+      altText: 'Image displaying the program mathquest in a terminal.'
+    },
     {
       repoLink: 'https://github.com/WeiJian123-tech/SkatePave.git',
       repoLabel: 'https://github.com/WeiJian123-tech/SkatePave.git',
